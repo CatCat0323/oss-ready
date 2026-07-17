@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage questions
+    url: https://github.com/CatCat0323/oss-ready/discussions
+    about: Ask for help and share ideas in Discussions.
+  - name: Security vulnerability
+    url: https://github.com/CatCat0323/oss-ready/security/advisories/new
+    about: Report security issues privately.
+
