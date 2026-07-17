@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oss-ready"
+version = "0.1.0"
+description = "A zero-dependency CLI that checks whether a repository is ready for healthy open-source collaboration."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+  { name = "CatCat0323" },
+]
+keywords = ["open-source", "repository", "health-check", "cli", "automation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/CatCat0323/oss-ready"
+Issues = "https://github.com/CatCat0323/oss-ready/issues"
+Source = "https://github.com/CatCat0323/oss-ready"
+
+[project.scripts]
+oss-ready = "oss_ready.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.oss-ready]
+min-score = 80
+fail-on = "score"
